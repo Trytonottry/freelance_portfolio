@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/babel-standalone@7.22.5/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const App = () => {
+            return (
+                <div className="min-h-screen bg-gray-100">
+                    {/* Header */}
+                    <header className="bg-blue-600 text-white py-6 text-center">
+                        <h1 className="text-4xl font-bold">Semyon</h1>
+                        <p className="mt-2 text-lg">Beginner Python/React Developer</p>
+                    </header>
+
+                    {/* Main Section */}
+                    <section className="py-10 px-4">
+                        <h2 className="text-3xl font-semibold text-center mb-8">About Me</h2>
+                        <p className="max-w-2xl mx-auto text-center text-gray-700">
+                            Hello! I'm a beginner developer with skills in Python, React, JavaScript, HTML, and CSS. I specialize in Web3 and automation tasks, such as building price parsers, Telegram bots, and landing pages. Check out my projects below!
+                        </p>
+                    </section>
+
+                    {/* Projects Section */}
+                    <section className="py-10 px-4 bg-white">
+                        <h2 className="text-3xl font-semibold text-center mb-8">Projects</h2>
+                        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+                            {/* Project 1 */}
+                            <div className="border rounded-lg p-4 shadow-md">
+                                <h3 className="text-xl font-semibold mb-2">Blockchain Kernel</h3>
+                                <p className="text-gray-600 mb-4">This repository contains a basic implementation of a blockchain in Python, designed as a learning tool to understand the core concepts of blockchain technology. </p>
+                                <a href="https://github.com/Trytonottry/Blockchain" target="_blank" className="text-blue-600 hover:underline">View on GitHub</a>
+                            </div>
+                            {/* Project 2 */}
+                            <div className="border rounded-lg p-4 shadow-md">
+                                <h3 className="text-xl font-semibold mb-2">dApp</h3>
+                                <p className="text-gray-600 mb-4">This repository contains a decentralized application (dApp) built on the Ethereum blockchain, showcasing the integration of smart contracts with a front-end interface. </p>
+                                <a href="https://github.com/Trytonottry/dApp" target="_blank" className="text-blue-600 hover:underline">View on GitHub</a>
+                            </div>
+                            {/* Project 3 */}
+                            <div className="border rounded-lg p-4 shadow-md">
+                                <h3 className="text-xl font-semibold mb-2">Dex Arbitrage</h3>
+                                <p className="text-gray-600 mb-4">This repository contains a decentralized exchange (DEX) arbitrage bot designed to identify and execute profitable trading opportunities across multiple DEXs on Ethereum, such as Uniswap and Sushiswap. </p>
+                                <a href="https://github.com/Trytonottry/Dex_arbitrage" target="_blank" className="text-blue-600 hover:underline">View on GitHub</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Contact Section */}
+                    <section className="py-10 px-4 text-center">
+                        <h2 className="text-3xl font-semibold mb-8">Contact Me</h2>
+                        <p className="text-gray-700 mb-4">Email: try2nottry.developer@gmail.com</p>
+                        <p className="text-gray-700 mb-4">Telegram: @Try2NotTry</p>
+                        <p className="text-gray-700">GitHub: <a href="https://github.com/Trytonottry" target="_blank" className="text-blue-600 hover:underline">github.com/yourusername</a></p>
+                    </section>
+
+                    {/* Footer */}
+                    <footer className="bg-blue-600 text-white py-4 text-center">
+                        <p>&copy; 2025 Your Name. All rights reserved.</p>
+                    </footer>
+                </div>
+            );
+        };
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
